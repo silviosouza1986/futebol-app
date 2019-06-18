@@ -1,0 +1,21 @@
+{% extends 'jogos/base.html' %}
+{% block title %}Listagem de Jogos{% endblock %}
+
+{% block content %}
+<h1 align="center"> Lista dos jogos de hoje</h1>
+<table id="jogos">
+  <tr>
+    {% for cabecalho in cabecalhos %}
+    <th>{{cabecalho}}</th>
+    {% endfor %}
+  </tr>
+  {% for jogo in jogos %}
+      <tr>
+        {% for i in jogo %}
+        <td>{{i}}</td>
+        {% endfor %}
+      </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
