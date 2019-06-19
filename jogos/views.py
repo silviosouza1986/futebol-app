@@ -35,10 +35,10 @@ def lista_jogos(request):
                 if type(i) == int and i != 1 and i != 2:
                     novoitem = str(i) + '%'
                     detalhesjogo.append(novoitem)
-                elif i == 1:
+                elif i == '1':
                     novoitem = 'Casa Vence'
                     detalhesjogo.append(novoitem)
-                elif i == 2:
+                elif i == '2':
                     novoitem = 'Visitante Vence'
                     detalhesjogo.append(novoitem)
                 elif i == 'X':
